@@ -1,4 +1,4 @@
-# DeskFlow Zero – Design Document
+# DeskFlow Zero :
 
 DeskFlow Zero is an autonomous multi-agent platform that resolves IT and employee-service work end to end, with no human touch, and escalates only when risk or ambiguity demands it. It follows a Model-View-Controller (MVC) pattern and is built on open protocols: the Model Context Protocol (MCP) connects agents to tools and enterprise systems, the Agent2Agent (A2A) protocol lets agents collaborate with other agents, and an advanced multimodal RAG layer lets them read text, screenshots, documents, audio and video.
 Problem. Service desks lose most of their time on repetitive requests: password resets, access requests, VPN and software issues, onboarding and offboarding. Each one needs triage, context lookup, an approval, a fulfilment action and a confirmation, spread across five or more tools. The work is simple; the hand-offs and queues make it slow.
