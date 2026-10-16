@@ -1,13 +1,14 @@
-#DeskFlow Zero – Design Document
-1. Overview
-DeskFlow Zero is an autonomous multi-agent platform that resolves IT and employee-service work end to end, with no human touch, and escalates only when risk or ambiguity demands it. It follows a Model-View-Controller (MVC) pattern and is built on open protocols: the Model Context Protocol (MCP) connects agents to tools and enterprise systems, the Agent2Agent (A2A) protocol lets agents collaborate with other agents, and an advanced multimodal RAG layer lets them read text, screenshots, documents, audio and video.
+# DeskFlow Zero – Design Document
+       DeskFlow Zero is an autonomous multi-agent platform that resolves IT and employee-service work end to end, with no human touch, and escalates only when risk or ambiguity demands it. It follows a Model-View-Controller (MVC) pattern and is built on open protocols: the Model Context Protocol (MCP) connects agents to tools and enterprise systems, the Agent2Agent (A2A) protocol lets agents collaborate with other agents, and an advanced multimodal RAG layer lets them read text, screenshots, documents, audio and video.
 Problem. Service desks lose most of their time on repetitive requests: password resets, access requests, VPN and software issues, onboarding and offboarding. Each one needs triage, context lookup, an approval, a fulfilment action and a confirmation, spread across five or more tools. The work is simple; the hand-offs and queues make it slow.
 Idea. Replace the hand-offs with a governed team of agents that runs an autonomous loop: perceive the request or event, plan, act through MCP tools, delegate to peer agents over A2A, verify the result, and learn from the outcome. Work starts from tickets, but also from events such as monitoring alerts, HR changes and scheduled sweeps. People stay in the loop only for high-risk actions and for cases the system cannot resolve confidently.
-What "Zero" means here
+
+# What "Zero" means here
 •	Zero manual triage: category, priority and routing are decided on arrival.
 •	Zero swivel-chair work: lookups and fulfilment happen inside the agent, not across tabs.
 •	Zero waiting on known fixes: low-risk, well-understood tickets close in minutes, not hours.
-Design principles
+
+# Design principles
 1.	Resolve, do not route: the default outcome is a closed ticket, not a re-assigned one.
 2.	Act only through governed tools, with least privilege and a policy check on every action.
 3.	Ask the user once, and only for what cannot be looked up.
