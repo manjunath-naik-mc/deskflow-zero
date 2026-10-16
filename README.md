@@ -66,10 +66,4 @@ tests/           unit and workflow tests
 .github/workflows/ci.yml   tests + evaluation gates on every push
 ```
 
-## Next steps toward the roadmap
 
-1. Swap in ADK agents with Gemini for classification and planning; keep the policy engine outside the model.
-2. Add a vision/speech extraction step and a real multimodal embedding index (Vertex AI Search or Vector Search).
-3. Wrap ServiceNow/Jira, Entra/Okta and Intune/Jamf as MCP servers behind `ToolGateway`.
-4. Move working state to a durable workflow store (checkpoints, approval waits of hours).
-5. Add proactive monitoring and scheduled-sweep triggers; shadow-mode evaluation (layer 3).
