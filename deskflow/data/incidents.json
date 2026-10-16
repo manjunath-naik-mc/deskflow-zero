@@ -1,0 +1,17 @@
+[
+  {"id": "inc-101", "title": "VPN error 619 on Windows laptop", "category": "vpn_issue", "device_os": "windows",
+   "resolution_code": "PUSH_VPN_PROFILE", "outcome": "confirmed",
+   "text": "Screenshot showed Error 619: A connection to the remote computer could not be established. Pushing the VPN profile fixed it."},
+  {"id": "inc-102", "title": "Locked out of VPN after failed sign-ins", "category": "account_unlock", "device_os": "windows",
+   "resolution_code": "UNLOCK_ACCOUNT", "outcome": "confirmed",
+   "text": "User was locked out of VPN before a client call after several failed sign-ins. Unlocking the account fixed it."},
+  {"id": "inc-103", "title": "Lost phone, authenticator not working", "category": "mfa_reset", "device_os": "macos",
+   "resolution_code": "RESET_MFA", "outcome": "confirmed",
+   "text": "User got a new phone and the authenticator app stopped working. MFA reset after identity check."},
+  {"id": "inc-104", "title": "Forgot password", "category": "password_reset", "device_os": "windows",
+   "resolution_code": "RESET_PASSWORD", "outcome": "confirmed",
+   "text": "User forgot their password and could not sign in. Password reset after identity check."},
+  {"id": "inc-105", "title": "VPN error 619 reinstall attempt", "category": "vpn_issue", "device_os": "macos",
+   "resolution_code": "REINSTALL_CLIENT", "outcome": "failed",
+   "text": "Error 619 remote computer connection failure. Reinstalling the VPN client did not fix it."}
+]

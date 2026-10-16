@@ -1,0 +1,16 @@
+[
+  {"id": "kb-001", "title": "Unlock a locked account", "category": "account_unlock", "resolution_code": "UNLOCK_ACCOUNT",
+   "text": "Accounts lock after repeated failed sign-ins. A user who is locked out of VPN or email needs the account unlocked. Verify identity with a step-up check, then unlock the account and confirm the sign-in works."},
+  {"id": "kb-002", "title": "Reset a forgotten password", "category": "password_reset", "resolution_code": "RESET_PASSWORD",
+   "text": "A user who forgot their password needs a reset. Verify identity with a step-up check, then reset the password. The temporary credential is delivered to the registered device, never in chat."},
+  {"id": "kb-003", "title": "Reset multi-factor authentication", "category": "mfa_reset", "resolution_code": "RESET_MFA",
+   "text": "A new phone or a broken authenticator app needs an MFA reset. Verify identity with a step-up check, then reset MFA so the user can enrol again."},
+  {"id": "kb-004", "title": "VPN error 619: connection could not be established", "category": "vpn_issue", "resolution_code": "PUSH_VPN_PROFILE",
+   "text": "VPN error 619 means a connection to the remote computer could not be established. The VPN client profile is usually corrupt. Push the current VPN profile to the device and retest the connection."},
+  {"id": "kb-005", "title": "Install approved software", "category": "software_install", "resolution_code": "INSTALL_SOFTWARE",
+   "text": "Approved applications can be installed on request. Push the approved package to the user's device and confirm it is present. Packages outside the approved list need a manual review."},
+  {"id": "kb-006", "title": "Application access request", "category": "access_request", "resolution_code": "GRANT_ACCESS",
+   "text": "Access to a business application needs the requester's manager to approve. After named approval, grant the access and confirm the user now holds it."},
+  {"id": "kb-007", "title": "Legacy VPN error 619 runbook", "category": "vpn_issue", "resolution_code": "REINSTALL_CLIENT", "superseded": true,
+   "text": "Old guidance for VPN error 619 on the remote computer connection: uninstall and reinstall the whole VPN client. Superseded by the profile push."}
+]

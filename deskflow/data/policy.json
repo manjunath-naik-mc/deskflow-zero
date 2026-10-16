@@ -1,0 +1,20 @@
+{
+  "version": "2026.10.1",
+  "confidence_threshold": 0.75,
+  "tools": {
+    "get_ticket": "read-only", "get_user": "read-only", "get_device": "read-only",
+    "run_diagnostic": "read-only",
+    "add_comment": "low", "set_state": "low", "close_ticket": "low",
+    "send_message": "low", "request_approval": "low", "verify_identity": "low",
+    "unlock_account": "medium", "reset_password": "medium", "reset_mfa": "medium",
+    "push_software": "medium", "lock_account": "medium", "remove_software": "medium",
+    "grant_app_access": "high", "revoke_access": "high",
+    "delete_account": "prohibited"
+  },
+  "a2a_peers": {
+    "hr-onboarding": {
+      "tasks": ["onboard_new_hire"],
+      "fields": ["name", "user_id", "role", "start_date"]
+    }
+  }
+}

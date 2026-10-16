@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deskflow-zero"
+version = "0.1.0"
+description = "Prototype of DeskFlow Zero: governed multi-agent IT service desk"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+deskflow = "deskflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["deskflow*"]
+
+[tool.setuptools.package-data]
+deskflow = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
